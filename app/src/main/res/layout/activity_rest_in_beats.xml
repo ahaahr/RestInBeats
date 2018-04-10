@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <VideoView android:id="@+id/background_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageButton android:id="@+id/play_pause_button"
+        android:layout_width="@dimen/image_button_size"
+        android:layout_height="@dimen/image_button_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/image_button_margin"
+        android:layout_marginStart="@dimen/image_button_margin"
+        android:background="@drawable/play_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton android:id="@+id/replay_button"
+        android:layout_width="@dimen/image_button_size"
+        android:layout_height="@dimen/image_button_size"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/play_pause_button"
+        android:layout_marginTop="@dimen/image_button_margin"
+        android:layout_marginStart="@dimen/image_button_margin"
+        android:background="@drawable/replay_button"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
